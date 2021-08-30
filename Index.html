@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+        <title>Aline Campos' Portfolio</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    <body>
+<!--About Section -->
+        <header>
+                <nav class=topnav id=”portfolioTopnav”>
+                        <a href="#About">About </a>
+                        <a href="#Skills">Skills </a>
+                        <a href="#Accomplishments">Accomplishments </a>
+                        <a href="#contact">Contact </a>
+                        <a href="javascript:void(0);" class="icon" onclick="openMenu()" ><i class="fa fa-bars"></i></a>
+                </nav>
+            <h1 class=ac>Aline Campos</h1>
+        </header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <main>  
+            <div id=”aboutsection”> 
+                <a class=profilepic href="https://www.linkedin.com/in/aline-campos-9548b1128/" target="_blank">
+                    <figure>
+                        <img src="Image (2).jpeg" width="200" height="200" alt="A piscute of Aline smiling to the camera. Background is covered by tress. Picture taken at QUT Gardens Point."/></figure></a>
+            <h2 id="about" class="heading uppercase topic">About</h2>
+                <p>I am a <strong>PhD candidate</strong> at the <a href="https://www.qut.edu.au" target="_blank"><em>Queensland University of Technology</em></a>. My background relays in two years of work as a microbiologist and a four-year bachelor's degree in Biological Sciences with specialisation in Biotechnology. My work at QUT started in 2020 with an Research Assistant position in August, and continued as a second RA position in January 2021. In the meantime I was accepted as a PhD candidate, my current main focus.</p>
+                    <br>
+<!--Skills Section -->
+            <h3 class="topic">Skills</h3>
+                    <h4>Research Skills</h4>
+                        <ul>
+                            <li class="list">Laboratory skills</li> 
+                            <li class="list">Molecular Biology</li>
+                            <li class="list">Microbiology</li>
+                            <li class="list">Report writing</li>
+                            <li class="list">Data collection</li>
+                            <li class="list">Data analysis</li>
+                        </ul>  
+                    <h4>Interpersonal Skills</h4>
+                    <ul>
+                        <li class="list">Strong teamwork</li>
+                        <li class="list">Strong communication skills</li>
+                    </ul>
+                    <h4>Technical Skills</h4>
+                    <ul>
+                        <li class="list">Project management</li>
+                        <li class="list">Programming language</li>
+                        <li class="list">Molecular assays</li>
+                        <li class="list">Microbiological analysis</li>
+                    </ul>                        
+                </div>
+<!--Accomplishment Section -->
+                <div id= accomplishmentsection>
+            <h2 class="topic">Accomplishments</h2>
+<!--TABLE-->
+            <table>
+                <tr>
+                    <th scope="col">Education</th>
+                    <th scope="col">Work experience</th>
+                    <th scope="col">Awards</th>           
+                </tr>
+                <td scope="row">Bachelor's degree in Biological Sciences</td>
+                    <td>Microbioligst (2014-2016)</td>
+                    <td>1st Scholarship awards</td>                
+                </tr>
+                <tr>
+                    <td scope="row">Post-graduation in Marine Biology</td>
+                    <td>Research Assistant (2020-2021)</td>
+                    <td>2nd Scholarship awards</td>
+                </tr>
+            </table>
+                </div>
+                <div id=contactsession>
+                    <h3>Coding Examples</h3>
+                    <a href="quiz.html" target="_blank">Take the Portfolio Quiz!</a>
+<!--Contact Section -->
+                    <h2 class=contactform>Contact</h2>
+            <a href="https://www.linkedin.com/in/aline-campos-9548b1128/" target="_blank">LinkedIn</a>
+            <br>
+            <a href="https://twitter.com/AlineCampos_15" target="_blank">Twitter</a>
+            <br>
+            <br> 
+            <form id="contactform">
+            <p> I am a(n):</p>
+                        <input type="radio" id="Student" name="Iama" value ="Student">
+                        <label for="Student">Student</label><br>
+                        <input type="radio" id="Professor" name="Iama" value ="Professor">
+                        <label for="Professor">Professor</label><br>
+                        <input type="radio" id="Other" name="Iama" value ="Other">
+                        <label for="Other">Other</label><br><br>
+                        <label for="name">*Name:</label><br>
+                        <input type="text" id="name" name="Name" required><br><br>
+                        <label for="email">*Email:</label><br>
+                        <input type="text" name="email" id="email" pattern="[1-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+                        <label for="mobile">Mobile</label><br>
+                        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10,16}"><br><br>
+                        <label for="Message">*Message:</label><br>
+                        <textarea id="Message" name="Message" rows="5" cols="50" required>Hello Aline, this is</textarea>
+                        <br><br>
+                        <input type="submit" value="Send" id="submit" onclick="myFunction()">
+                    </form>
+                </div>
+                <script>
+   function myFunction() {
+     alert("Thank you for sending your message. We will come back to you within 24 hours.");
+   }
+   </script>
+                </main>
+                <script src="./nav.js"></script>
+            </body>
+
+</html>
